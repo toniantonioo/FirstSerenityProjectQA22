@@ -1,7 +1,4 @@
 package org.fasttrackit.features;
-
-import net.serenitybdd.junit.runners.SerenityRunner;
-import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
 import org.fasttrackit.steps.LoginSteps;
 import org.fasttrackit.utils.Constants;
@@ -17,7 +14,7 @@ public class LoginTest extends BaseTest{
         loginSteps.navigateToLogin();
         loginSteps.enterCredentials(Constants.USER_EMAIL, Constants.USER_PASSWORD);
         loginSteps.clickLogIn();
-        loginSteps.checkUserIsLoggedIn("Hello, Cosmin Fast!");
+        loginSteps.checkUserIsLoggedIn("Hello, obsy obsyy obsyyy!");
     }
 
     @Test
