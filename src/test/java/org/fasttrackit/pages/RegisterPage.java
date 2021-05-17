@@ -3,6 +3,7 @@ package org.fasttrackit.pages;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
+import org.apache.commons.lang3.RandomStringUtils;
 
 public class RegisterPage extends PageObject {
     @FindBy(id = "firstname")
@@ -52,5 +53,8 @@ public class RegisterPage extends PageObject {
     }
     public void clickRegisterButton(){
         clickOn(registerButton);
+    }
+    public void randomStringGenerator(){
+        String random= RandomStringUtils.randomAlphabetic(10)+"@gamil.com";
     }
 }

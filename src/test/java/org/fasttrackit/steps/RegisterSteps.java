@@ -1,6 +1,7 @@
 package org.fasttrackit.steps;
 
 import net.thucydides.core.annotations.Step;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.fasttrackit.pages.AccountPage;
 import org.fasttrackit.pages.HomePage;
 import org.fasttrackit.pages.RegisterPage;
@@ -10,6 +11,10 @@ public class RegisterSteps {
     private HomePage homePage;
     private RegisterPage registerPage;
     private AccountPage accountPage;
+
+
+
+
     @Step
     public void navigateToRegister(){
         homePage.open();
